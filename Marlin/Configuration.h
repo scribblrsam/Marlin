@@ -500,10 +500,10 @@
     #define DEFAULT_Kp_LIST {  22.20,  22.20 }
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
-  #else // Micro-swiss all metal hot end 27-11-2020
-    #define DEFAULT_Kp  37.40
-    #define DEFAULT_Ki  4.31
-    #define DEFAULT_Kd 81.14
+  #else // Micro-swiss all metal hot end - 27-11-2020
+    #define DEFAULT_Kp  36.69
+    #define DEFAULT_Ki  4.16
+    #define DEFAULT_Kd 80.79
   #endif
 #endif // PIDTEMP
 
@@ -542,9 +542,11 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 124.01
-  #define DEFAULT_bedKi 21.95
-  #define DEFAULT_bedKd 467.14
+  
+  // Creality Glass Bed - 27-11-2020
+  #define DEFAULT_bedKp 150.66 
+  #define DEFAULT_bedKi 30.10
+  #define DEFAULT_bedKd 502.69
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
